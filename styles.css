@@ -9,6 +9,54 @@ body {
       box-sizing: border-box;
   }
 
+  header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1;
+    left: 0%;
+    
+}
+nav {
+    display: flex;
+    background-color: #ffffff;
+    align-items: center;
+}
+nav:hover{
+    box-shadow: 10px -20px 30px #4d4d4d;
+}
+
+nav div{
+    height: 30px;
+    flex-grow: 4;
+    padding: 10px;
+}
+
+nav div img {
+    height: 100%;
+}
+
+nav div.search-container > input {
+    box-sizing: border-box;
+    height: 30px;
+    width: 80%;
+    margin: 0;
+    padding: 5px;
+    border: 1px solid #e0e0e0;
+}
+
+nav div.search-container > button {
+    color: #ffffff;
+    box-sizing: border-box;
+    height: 30px;
+    width: 20%;
+    margin: 0;
+    padding: 5px;
+    border: 1px solid #000000;
+    cursor: pointer;
+    background-color: #13099e;
+}
+
   input[type=password]{
     padding: 10px 20px;
     margin: 5px 0;
@@ -38,24 +86,48 @@ div.index{
 }
 
 div.sisekast{
-    left:50%;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    left:60%;
     position: absolute;
-    background-color: blue;
-    width: 750px;
-    height: 100%;
+    width: 600px;
     margin: 0px 0 0 -375px;
+    background-color: #ffffff;
 }
 
 div.element{
+    display: flex;
+    flex-direction: column;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 30px;
-    box-shadow: 0px 5px 2px 7px lightgray;
     left:50%;
     position: absolute;
     background-color: white;
     width: 740px;
     height: max-content;
     margin: 80px 0 0 -370px;
+}
+p.date{
+    text-align: right;
+    color: #8b8b8b98;
+    font-size: 15px;
+}
+p.description{
+    font-weight: 500;
+    font-size: 20px;
+    text-align: left;
+}
+img.post {
+        display: flex;
+        max-width:740px;
+        max-height:400px;
+        min-width: 400px;
+        min-height: 400px;
+    }
+img.like:hover{
+    box-shadow: 5px 5px 5px #7c7c7c;
+    cursor: pointer;
 }
 
 
