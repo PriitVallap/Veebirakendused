@@ -90,36 +90,29 @@ div.index{
     position: absolute;
     background-color: white;
     width: 1000px;
-    height: 150%;
+    height: max-content;
     margin: -10px 0 0 -500px;
 }
 
-div.sisekast{
+.flex-container{
     display: flex;
     flex-direction: column;
-    text-align: left;
-    left:60%;
-    position: absolute;
-    width: 600px;
-    margin: 0px 0 0 -375px;
-    background-color: #ffffff;
+    height: max-content;
+    margin-top: 80px;
 }
 
-div.element{
-    display: flex;
-    flex-direction: column;
+.flex-container > div{
     font-family: Arial, Helvetica, sans-serif;
     font-size: 30px;
     left:50%;
-    position: absolute;
+    position: relative;
     background-color: white;
     width: 740px;
     height: max-content;
-    margin: 80px 0 0 -370px;
+    margin: 20px 0 0 -370px;
     box-shadow: 5px 5px 30px #7c7c7c;
     border-radius: 15px;
 }
-
 
 div.element > p {
     margin-left: 10px;
@@ -131,8 +124,10 @@ p.date{
     color: #8b8b8b98;
     font-size: 15px;
 }
+
 p.description{
-    font-weight: 500;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
     font-size: 20px;
     text-align: left;
     margin-left: 10px;
@@ -146,6 +141,14 @@ img.post {
         min-height: 400px;
     }
 
+img.loginPostit{
+    position: absolute;
+    margin-left: -240px;
+    height: 100px;
+    width: 100px;
+
+}
+
 img.like{
     margin: 20px 10px 10px 10px;
     border-radius: 5px;
@@ -156,6 +159,13 @@ img.like:hover{
     cursor: pointer;
 }
 
+img.profile {
+    height: 40px;
+    width: 45px;
+    position: absolute;
+    margin-top: 5px;
+    margin-left: 5px;
+}
 
 a:link {
     font-size: 20px;
