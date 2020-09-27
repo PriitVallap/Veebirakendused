@@ -1,3 +1,5 @@
+/*margin from the left shiuld be at least 10px*/
+
 body {
     background-color: royalblue;
     font-family: "Arial";
@@ -22,6 +24,7 @@ nav {
     background-color: #ffffff;
     align-items: center;
 }
+
 nav:hover{
     box-shadow: 10px -20px 30px #4d4d4d;
 }
@@ -34,6 +37,10 @@ nav div{
 
 nav div img {
     height: 100%;
+    margin: 0;
+    padding: 0.5%;
+
+
 }
 
 nav div.search-container > input {
@@ -43,6 +50,7 @@ nav div.search-container > input {
     margin: 0;
     padding: 5px;
     border: 1px solid #e0e0e0;
+    border-radius: 5px;
 }
 
 nav div.search-container > button {
@@ -53,6 +61,7 @@ nav div.search-container > button {
     margin: 0;
     padding: 5px;
     border: 1px solid #000000;
+    border-radius: 5px;
     cursor: pointer;
     background-color: #13099e;
 }
@@ -81,7 +90,7 @@ div.index{
     position: absolute;
     background-color: white;
     width: 1000px;
-    height: 100%;
+    height: 150%;
     margin: -10px 0 0 -500px;
 }
 
@@ -107,11 +116,20 @@ div.element{
     width: 740px;
     height: max-content;
     margin: 80px 0 0 -370px;
+    box-shadow: 5px 5px 30px #7c7c7c;
+    border-radius: 15px;
 }
+
+
+p {
+    margin-left: 10px;
+}
+
 p.date{
     text-align: right;
     color: #8b8b8b98;
     font-size: 15px;
+    margin-right: 10;
 }
 p.description{
     font-weight: 500;
@@ -125,6 +143,12 @@ img.post {
         min-width: 400px;
         min-height: 400px;
     }
+
+img.like{
+    margin: 20px 10px 10px 10px;
+    border-radius: 5px;
+}
+
 img.like:hover{
     box-shadow: 5px 5px 5px #7c7c7c;
     cursor: pointer;
