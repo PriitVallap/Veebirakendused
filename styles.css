@@ -121,21 +121,23 @@ div.element{
 }
 
 
-p {
+div.element > p {
     margin-left: 10px;
+    margin-right: 10px;
 }
 
 p.date{
     text-align: right;
     color: #8b8b8b98;
     font-size: 15px;
-    margin-right: 10;
 }
 p.description{
     font-weight: 500;
     font-size: 20px;
     text-align: left;
+    margin-left: 10px;
 }
+
 img.post {
         display: flex;
         max-width:740px;
@@ -168,3 +170,20 @@ input[type=submit] {
     border-radius: 5px;
     font-size: 15px;
 }
+
+
+#Welcome {
+    font-size: 30px; 
+    padding-top: ;
+    font-weight: normal;
+}
+
+.login a ~ p {
+    font-size: 20px;
+}
+
+.login a + p{
+    font-size: 17px;
+}
+
+
